@@ -1,0 +1,38 @@
+{
+    "links": [],
+    "resulttype": "list",
+    "result": {
+        "value": [
+            {
+                "rel": "urn:org.restfulobjects:rels/element",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.party.Organisation/1019",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "TEST FRANCE SAS [FR01]"
+            },
+            {
+                "rel": "urn:org.restfulobjects:rels/element",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.party.Organisation/1020",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "TEST PROPERTIES [FR02]"
+            },
+            {
+                "rel": "urn:org.restfulobjects:rels/element",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.party.Organisation/1021",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "TEST PROPERTIES [FR03]"
+            }
+        ],
+        "links": [
+            {
+                "rel": "urn:org.restfulobjects:rels/return-type",
+                "href": "http://estatio-test.int.ecpnv.com/restful/domain-types/java.util.List",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/domain-type\""
+            }
+        ],
+        "extensions": {}
+    }
+}

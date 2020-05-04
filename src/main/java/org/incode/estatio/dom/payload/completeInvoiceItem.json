@@ -1,0 +1,357 @@
+{
+    "id": "completeInvoiceItem",
+    "memberType": "action",
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302/actions/completeInvoiceItem",
+            "method": "GET",
+            "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object-action\""
+        },
+        {
+            "rel": "up",
+            "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302",
+            "method": "GET",
+            "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+            "title": "3010104609:  GROUPE NOX [FR11269],  O3FF.1644.2019"
+        },
+        {
+            "rel": "urn:org.restfulobjects:rels/invoke;action=\"completeInvoiceItem\"",
+            "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302/actions/completeInvoiceItem/invoke",
+            "method": "PUT",
+            "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object-action\"",
+            "arguments": {
+                "orderItem": {
+                    "value": null
+                },
+                "description": {
+                    "value": null
+                },
+                "netAmount": {
+                    "value": null
+                },
+                "tax": {
+                    "value": null
+                },
+                "vatAmount": {
+                    "value": null
+                },
+                "grossAmount": {
+                    "value": null
+                },
+                "charge": {
+                    "value": null
+                },
+                "project": {
+                    "value": null
+                },
+                "budgetItem": {
+                    "value": null
+                },
+                "period": {
+                    "value": null
+                }
+            }
+        },
+        {
+            "rel": "describedby",
+            "href": "http://estatio-test.int.ecpnv.com/restful/domain-types/incomingInvoice.IncomingInvoice/actions/completeInvoiceItem",
+            "method": "GET",
+            "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/action-description\""
+        }
+    ],
+    "extensions": {
+        "actionType": "user",
+        "actionSemantics": "idempotent"
+    },
+    "parameters": {
+        "orderItem": {
+            "num": 0,
+            "id": "orderItem",
+            "name": "Order Item",
+            "description": "",
+            "choices": [
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/orders.OrderItem/2842",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Refurbishment of the shopping centre  outstanding 21426.00  of: 139825.00   PROJECT MANAGEMENT  order:  D 02 2018"
+                }
+            ],
+            "default": {
+                "rel": "urn:org.restfulobjects:rels/value",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/orders.OrderItem/2842",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "Refurbishment of the shopping centre  outstanding 21426.00  of: 139825.00   PROJECT MANAGEMENT  order:  D 02 2018"
+            }
+        },
+        "description": {
+            "num": 1,
+            "id": "description",
+            "name": "Description",
+            "description": "",
+            "default": "Refurbishment of the shopping centre"
+        },
+        "netAmount": {
+            "num": 2,
+            "id": "netAmount",
+            "name": "Net Amount",
+            "description": "",
+            "default": 16876.00
+        },
+        "tax": {
+            "num": 3,
+            "id": "tax",
+            "name": "Tax",
+            "description": "",
+            "choices": [
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/1",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "V22 [A]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/2",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "VE26 [B]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/3",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "VF20 [C]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/4",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "VI08 [D]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/5",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "VE01 [E]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/8",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Q"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/10",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "TVA [FRA]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/11",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "CRL [FRC]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/12",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "TVA Réduite [FRD]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/13",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Exempt [FRE]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/14",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "TVA normal [FRF]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/15",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Outside [FRO]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/16",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "TVA Réduite [FRR]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/17",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "CRL réduite [FRS]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/18",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Sweden VAT Standard [SESTD]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/19",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "VAT Historical 7 [FRB]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/20",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "V22P [F]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/21",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Be Normal Vat [BE_NORM]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/22",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Be Vat Medium [BE_MED]"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/23",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "Be Vat Low [BE_LOW]"
+                }
+            ],
+            "default": {
+                "rel": "urn:org.restfulobjects:rels/value",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.tax.Tax/14",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "TVA normal [FRF]"
+            }
+        },
+        "vatAmount": {
+            "num": 4,
+            "id": "vatAmount",
+            "name": "Vat Amount",
+            "description": "",
+            "default": 3375.20
+        },
+        "grossAmount": {
+            "num": 5,
+            "id": "grossAmount",
+            "name": "Gross Amount",
+            "description": "",
+            "default": 20251.20
+        },
+        "charge": {
+            "num": 6,
+            "id": "charge",
+            "name": "Charge",
+            "description": "",
+            "default": {
+                "rel": "urn:org.restfulobjects:rels/value",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.charge.Charge/242",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "PROJECT MANAGEMENT [PROJECT MANAGEMENT]"
+            }
+        },
+        "project": {
+            "num": 7,
+            "id": "project",
+            "name": "Project",
+            "description": "",
+            "choices": [
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/94",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-WORKS FRANCK PROVOST"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/95",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-WEBSITE"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/143",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-MAJOR REFURB"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/148",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-DIRECTORIES / BORNES"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/366",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-NEW PEDESTRIAN COUNT"
+                },
+                {
+                    "rel": "urn:org.restfulobjects:rels/value",
+                    "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/391",
+                    "method": "GET",
+                    "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                    "title": "GH-REGUS"
+                }
+            ],
+            "default": {
+                "rel": "urn:org.restfulobjects:rels/value",
+                "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.capex.dom.project.Project/143",
+                "method": "GET",
+                "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+                "title": "GH-MAJOR REFURB"
+            }
+        },
+        "budgetItem": {
+            "num": 8,
+            "id": "budgetItem",
+            "name": "Budget Item",
+            "description": ""
+        },
+        "period": {
+            "num": 9,
+            "id": "period",
+            "name": "Period",
+            "description": "",
+            "default": "F2020"
+        }
+    }
+}

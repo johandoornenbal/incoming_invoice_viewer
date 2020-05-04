@@ -1,0 +1,799 @@
+{
+  "id": "completeInvoice",
+  "memberType": "action",
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302/actions/completeInvoice",
+      "method": "GET",
+      "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object-action\""
+    },
+    {
+      "rel": "up",
+      "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302",
+      "method": "GET",
+      "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+      "title": "3010104609:  GROUPE NOX [FR11269],  O3FF.1644.2019"
+    },
+    {
+      "rel": "urn:org.restfulobjects:rels/invoke;action=\"completeInvoice\"",
+      "href": "http://estatio-test.int.ecpnv.com/restful/objects/incomingInvoice.IncomingInvoice/157302/actions/completeInvoice/invoke",
+      "method": "PUT",
+      "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object-action\"",
+      "arguments": {
+        "incomingInvoiceType": {
+          "value": null
+        },
+        "createNewSupplier?": {
+          "value": null
+        },
+        "supplier": {
+          "value": null
+        },
+        "createRoleIfRequired": {
+          "value": null
+        },
+        "bankAccount": {
+          "value": null
+        },
+        "newSupplierCandidate": {
+          "value": null
+        },
+        "newSupplierCountry": {
+          "value": null
+        },
+        "newSupplierChamberOfCommerceCode": {
+          "value": null
+        },
+        "newSupplierIban": {
+          "value": null
+        },
+        "invoiceNumber": {
+          "value": null
+        },
+        "communicationNumber": {
+          "value": null
+        },
+        "dateReceived": {
+          "value": null
+        },
+        "invoiceDate": {
+          "value": null
+        },
+        "dueDate": {
+          "value": null
+        },
+        "paymentMethod": {
+          "value": null
+        },
+        "currency": {
+          "value": null
+        }
+      }
+    },
+    {
+      "rel": "describedby",
+      "href": "http://estatio-test.int.ecpnv.com/restful/domain-types/incomingInvoice.IncomingInvoice/actions/completeInvoice",
+      "method": "GET",
+      "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/action-description\""
+    }
+  ],
+  "extensions": {
+    "actionType": "user",
+    "actionSemantics": "idempotent"
+  },
+  "parameters": {
+    "incomingInvoiceType": {
+      "num": 0,
+      "id": "incomingInvoiceType",
+      "name": "Incoming Invoice Type",
+      "description": "",
+      "choices": [
+        "Capex",
+        "Property Expenses",
+        "Service Charges",
+        "Local Expenses",
+        "Corporate Expenses",
+        "Tangible Fixed Asset",
+        "Intercompany",
+        "Re Invoicing",
+        "Ita Order Invoice",
+        "Ita Recoverable",
+        "Ita Management Costs"
+      ],
+      "default": "Capex"
+    },
+    "createNewSupplier?": {
+      "num": 1,
+      "id": "createNewSupplier?",
+      "name": "Create new supplier?",
+      "description": ""
+    },
+    "supplier": {
+      "num": 2,
+      "id": "supplier",
+      "name": "Supplier",
+      "description": "",
+      "default": {
+        "rel": "urn:org.restfulobjects:rels/value",
+        "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.party.Organisation/4594",
+        "method": "GET",
+        "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+        "title": "GROUPE NOX [FR11269]"
+      }
+    },
+    "createRoleIfRequired": {
+      "num": 3,
+      "id": "createRoleIfRequired",
+      "name": "Create Role If Required",
+      "description": ""
+    },
+    "bankAccount": {
+      "num": 4,
+      "id": "bankAccount",
+      "name": "Bank Account",
+      "description": "",
+      "default": {
+        "rel": "urn:org.restfulobjects:rels/value",
+        "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.financial.bankaccount.BankAccount/6882",
+        "method": "GET",
+        "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+        "title": "FR60 1144 9000 0303 1169 6001 L62 - FR11269 (VERIFIED)"
+      }
+    },
+    "newSupplierCandidate": {
+      "num": 5,
+      "id": "newSupplierCandidate",
+      "name": "New Supplier Candidate",
+      "description": ""
+    },
+    "newSupplierCountry": {
+      "num": 6,
+      "id": "newSupplierCountry",
+      "name": "New Supplier Country",
+      "description": "",
+      "choices": [
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/1",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Netherlands [NLD]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/2",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "United Kingdom [GBR]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/3",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Sweden [SWE]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/4",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "France [FRA]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/5",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Italy [ITA]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/incodecountry.Country/6",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "BELGIUM [BEL]"
+        }
+      ]
+    },
+    "newSupplierChamberOfCommerceCode": {
+      "num": 7,
+      "id": "newSupplierChamberOfCommerceCode",
+      "name": "New Supplier Chamber Of Commerce Code",
+      "description": ""
+    },
+    "newSupplierIban": {
+      "num": 8,
+      "id": "newSupplierIban",
+      "name": "New Supplier Iban",
+      "description": ""
+    },
+    "invoiceNumber": {
+      "num": 9,
+      "id": "invoiceNumber",
+      "name": "Invoice Number",
+      "description": "",
+      "default": "O3FF.1644.2019"
+    },
+    "communicationNumber": {
+      "num": 10,
+      "id": "communicationNumber",
+      "name": "Communication Number",
+      "description": ""
+    },
+    "dateReceived": {
+      "num": 11,
+      "id": "dateReceived",
+      "name": "Date Received",
+      "description": "",
+      "default": {
+        "year": 2019,
+        "dayOfMonth": 26,
+        "dayOfWeek": 3,
+        "era": 1,
+        "dayOfYear": 177,
+        "chronology": {
+          "zone": {
+            "fixed": true,
+            "id": "UTC"
+          }
+        },
+        "centuryOfEra": 20,
+        "yearOfEra": 2019,
+        "yearOfCentury": 19,
+        "weekyear": 2019,
+        "weekOfWeekyear": 26,
+        "monthOfYear": 6,
+        "fieldTypes": [
+          {
+            "durationType": {
+              "name": "years"
+            },
+            "rangeDurationType": null,
+            "name": "year"
+          },
+          {
+            "durationType": {
+              "name": "months"
+            },
+            "rangeDurationType": {
+              "name": "years"
+            },
+            "name": "monthOfYear"
+          },
+          {
+            "durationType": {
+              "name": "days"
+            },
+            "rangeDurationType": {
+              "name": "months"
+            },
+            "name": "dayOfMonth"
+          }
+        ],
+        "values": [
+          2019,
+          6,
+          26
+        ],
+        "fields": [
+          {
+            "lenient": false,
+            "rangeDurationField": null,
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 292278993,
+            "minimumValue": -292275054,
+            "durationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "name": "year",
+            "type": {
+              "durationType": {
+                "name": "years"
+              },
+              "rangeDurationType": null,
+              "name": "year"
+            },
+            "supported": true
+          },
+          {
+            "lenient": false,
+            "rangeDurationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 12,
+            "minimumValue": 1,
+            "durationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "name": "monthOfYear",
+            "type": {
+              "durationType": {
+                "name": "months"
+              },
+              "rangeDurationType": {
+                "name": "years"
+              },
+              "name": "monthOfYear"
+            },
+            "supported": true
+          },
+          {
+            "rangeDurationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "maximumValue": 31,
+            "minimumValue": 1,
+            "lenient": false,
+            "unitMillis": 86400000,
+            "durationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "leapDurationField": null,
+            "name": "dayOfMonth",
+            "type": {
+              "durationType": {
+                "name": "days"
+              },
+              "rangeDurationType": {
+                "name": "months"
+              },
+              "name": "dayOfMonth"
+            },
+            "supported": true
+          }
+        ]
+      }
+    },
+    "invoiceDate": {
+      "num": 12,
+      "id": "invoiceDate",
+      "name": "Invoice Date",
+      "description": "",
+      "default": {
+        "year": 2019,
+        "dayOfMonth": 24,
+        "dayOfWeek": 1,
+        "era": 1,
+        "dayOfYear": 175,
+        "chronology": {
+          "zone": {
+            "fixed": true,
+            "id": "UTC"
+          }
+        },
+        "centuryOfEra": 20,
+        "yearOfEra": 2019,
+        "yearOfCentury": 19,
+        "weekyear": 2019,
+        "weekOfWeekyear": 26,
+        "monthOfYear": 6,
+        "fieldTypes": [
+          {
+            "durationType": {
+              "name": "years"
+            },
+            "rangeDurationType": null,
+            "name": "year"
+          },
+          {
+            "durationType": {
+              "name": "months"
+            },
+            "rangeDurationType": {
+              "name": "years"
+            },
+            "name": "monthOfYear"
+          },
+          {
+            "durationType": {
+              "name": "days"
+            },
+            "rangeDurationType": {
+              "name": "months"
+            },
+            "name": "dayOfMonth"
+          }
+        ],
+        "values": [
+          2019,
+          6,
+          24
+        ],
+        "fields": [
+          {
+            "lenient": false,
+            "rangeDurationField": null,
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 292278993,
+            "minimumValue": -292275054,
+            "durationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "name": "year",
+            "type": {
+              "durationType": {
+                "name": "years"
+              },
+              "rangeDurationType": null,
+              "name": "year"
+            },
+            "supported": true
+          },
+          {
+            "lenient": false,
+            "rangeDurationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 12,
+            "minimumValue": 1,
+            "durationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "name": "monthOfYear",
+            "type": {
+              "durationType": {
+                "name": "months"
+              },
+              "rangeDurationType": {
+                "name": "years"
+              },
+              "name": "monthOfYear"
+            },
+            "supported": true
+          },
+          {
+            "rangeDurationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "maximumValue": 31,
+            "minimumValue": 1,
+            "lenient": false,
+            "unitMillis": 86400000,
+            "durationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "leapDurationField": null,
+            "name": "dayOfMonth",
+            "type": {
+              "durationType": {
+                "name": "days"
+              },
+              "rangeDurationType": {
+                "name": "months"
+              },
+              "name": "dayOfMonth"
+            },
+            "supported": true
+          }
+        ]
+      }
+    },
+    "dueDate": {
+      "num": 13,
+      "id": "dueDate",
+      "name": "Due Date",
+      "description": "",
+      "default": {
+        "year": 2019,
+        "dayOfMonth": 24,
+        "dayOfWeek": 1,
+        "era": 1,
+        "dayOfYear": 175,
+        "chronology": {
+          "zone": {
+            "fixed": true,
+            "id": "UTC"
+          }
+        },
+        "centuryOfEra": 20,
+        "yearOfEra": 2019,
+        "yearOfCentury": 19,
+        "weekyear": 2019,
+        "weekOfWeekyear": 26,
+        "monthOfYear": 6,
+        "fieldTypes": [
+          {
+            "durationType": {
+              "name": "years"
+            },
+            "rangeDurationType": null,
+            "name": "year"
+          },
+          {
+            "durationType": {
+              "name": "months"
+            },
+            "rangeDurationType": {
+              "name": "years"
+            },
+            "name": "monthOfYear"
+          },
+          {
+            "durationType": {
+              "name": "days"
+            },
+            "rangeDurationType": {
+              "name": "months"
+            },
+            "name": "dayOfMonth"
+          }
+        ],
+        "values": [
+          2019,
+          6,
+          24
+        ],
+        "fields": [
+          {
+            "lenient": false,
+            "rangeDurationField": null,
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 292278993,
+            "minimumValue": -292275054,
+            "durationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "name": "year",
+            "type": {
+              "durationType": {
+                "name": "years"
+              },
+              "rangeDurationType": null,
+              "name": "year"
+            },
+            "supported": true
+          },
+          {
+            "lenient": false,
+            "rangeDurationField": {
+              "unitMillis": 31556952000,
+              "precise": false,
+              "name": "years",
+              "type": {
+                "name": "years"
+              },
+              "supported": true
+            },
+            "leapDurationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "maximumValue": 12,
+            "minimumValue": 1,
+            "durationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "name": "monthOfYear",
+            "type": {
+              "durationType": {
+                "name": "months"
+              },
+              "rangeDurationType": {
+                "name": "years"
+              },
+              "name": "monthOfYear"
+            },
+            "supported": true
+          },
+          {
+            "rangeDurationField": {
+              "unitMillis": 2629746000,
+              "precise": false,
+              "name": "months",
+              "type": {
+                "name": "months"
+              },
+              "supported": true
+            },
+            "maximumValue": 31,
+            "minimumValue": 1,
+            "lenient": false,
+            "unitMillis": 86400000,
+            "durationField": {
+              "unitMillis": 86400000,
+              "precise": true,
+              "name": "days",
+              "type": {
+                "name": "days"
+              },
+              "supported": true
+            },
+            "leapDurationField": null,
+            "name": "dayOfMonth",
+            "type": {
+              "durationType": {
+                "name": "days"
+              },
+              "rangeDurationType": {
+                "name": "months"
+              },
+              "name": "dayOfMonth"
+            },
+            "supported": true
+          }
+        ]
+      }
+    },
+    "paymentMethod": {
+      "num": 14,
+      "id": "paymentMethod",
+      "name": "Payment Method",
+      "description": "",
+      "choices": [
+        "Direct Debit",
+        "Billing Account",
+        "Bank Transfer",
+        "Cash",
+        "Cheque",
+        "Credit Card",
+        "Refund By Supplier",
+        "Manual Process"
+      ],
+      "default": "Bank Transfer"
+    },
+    "currency": {
+      "num": 15,
+      "id": "currency",
+      "name": "Currency",
+      "description": "",
+      "choices": [
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.currency.Currency/1",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Euro [EUR]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.currency.Currency/2",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Swedish krona [SEK]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.currency.Currency/3",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "Pound sterling [GBP]"
+        },
+        {
+          "rel": "urn:org.restfulobjects:rels/value",
+          "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.currency.Currency/4",
+          "method": "GET",
+          "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+          "title": "US dollar [USD]"
+        }
+      ],
+      "default": {
+        "rel": "urn:org.restfulobjects:rels/value",
+        "href": "http://estatio-test.int.ecpnv.com/restful/objects/org.estatio.dom.currency.Currency/1",
+        "method": "GET",
+        "type": "application/json;profile=\"urn:org.restfulobjects:repr-types/object\"",
+        "title": "Euro [EUR]"
+      }
+    }
+  }
+}
